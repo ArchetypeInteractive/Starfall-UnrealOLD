@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "StarfallEditor Editor Win64 Development (Starfall)",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall.json",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files/Epic Games/UE_5.3/Engine/Source/**"
+            ]
+        },
+        {
+            "name": "Win32",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Default.json"
+        }
+    ],
+    "version": 4
+}

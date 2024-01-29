@@ -1,0 +1,1666 @@
+[
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\NakamaBlueprints.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Private\\NakamaBlueprints.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Private\\NakamaClientRequests.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Private\\NakamaLibrary.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Private\\NakamaRealtimeClientRequests.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Public\\NakamaBlueprints.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Public\\NakamaClientRequests.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Public\\NakamaLibrary.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaBlueprints\\Public\\NakamaRealtimeClientRequests.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaBlueprints.25.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\NakamaCore.build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Nakama_APL.xml",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\NakamaCore.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\NakamaCoreClientFactory.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\UnrealWsTransport.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\UnrealWsTransport.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\http.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\http.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Private\\mod.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\NakamaCore.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\NakamaCoreClientFactory.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\UnrealLogSink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\ClientFactory.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NClientInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NError.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NException.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NExport.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NHttpTransportInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NPlatformParams.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NSessionInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NUtils.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\Nakama.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\NakamaVersion.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\URLParts.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\config.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NAccount.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NAccountDevice.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NChannelMessage.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NChannelMessageList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NFriend.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NFriendList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NGroup.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NGroupList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NGroupUser.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NGroupUserList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NLeaderboardRecord.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NLeaderboardRecordList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NMatch.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NMatchList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NNotification.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NNotificationList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NRpc.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NStorageObject.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NStorageObjectAck.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NStorageObjectId.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NStorageObjectList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NStorageObjectWrite.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NStoragePermissions.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NTournament.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NTournamentList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NTournamentRecordList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NUser.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NUserGroup.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NUserGroupList.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\data\\NUsers.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\log\\NConsoleLogSink.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\log\\NLogSinkInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\log\\NLogger.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\NRtClientDisconnectInfo.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\NRtClientInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\NRtClientListenerInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\NRtDefaultClientListener.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\NRtTransportInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\NWebsocketsFactory.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NChannel.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NChannelMessageAck.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NChannelPresenceEvent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NMatchData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NMatchPresenceEvent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NMatchmakerMatched.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NMatchmakerTicket.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NParty.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NPartyClose.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NPartyData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NPartyJoinRequest.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NPartyLeader.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NPartyMatchmakerTicket.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NPartyPresenceEvent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NRtError.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NRtException.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NStatus.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NStatusPresenceEvent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NStream.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NStreamData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NStreamPresenceEvent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\rtdata\\NUserPresence.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nakama-cpp\\realtime\\wslay\\WslayIOInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\Public\\nonstd\\optional.hpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\android\\arm64-v8a\\libnakama-sdk.so",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\android\\armeabi-v7a\\libnakama-sdk.so",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\android\\x86_64\\libnakama-sdk.so",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\ios-arm64\\libnakama-sdk.dylib",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\linux-x64\\libnakama-sdk.so",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\macosx-arm64\\libnakama-sdk.dylib",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-arm64\\Debug\\nakama-sdk.dll",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-arm64\\Debug\\nakama-sdk.lib",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-arm64\\Debug\\nakama-sdk.pdb",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-arm64\\Release\\nakama-sdk.dll",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-arm64\\Release\\nakama-sdk.lib",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-x64\\Debug\\nakama-sdk.dll",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-x64\\Debug\\nakama-sdk.lib",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-x64\\Debug\\nakama-sdk.pdb",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-x64\\Release\\nakama-sdk.dll",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaCore\\libnakama\\win-x64\\Release\\nakama-sdk.lib",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaCore.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\NakamaTests.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\NakamaTests.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_AuthoritativeMatch.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_Chat.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_Match.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_Notifications.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_Parties.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_RPC.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Realtime\\Test_Tournament.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_Authentication.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_Errors.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_Friends.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_GetAccount.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_GetUsers.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_Groups.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_Internals.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_ListMatches.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_RestoreSession.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Private\\Tests\\Test_Storage.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\NakamaTestBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\NakamaTests.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Realtime\\Test_AuthoritativeMatch.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Realtime\\Test_Match.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Realtime\\Test_Parties.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Realtime\\Test_Tournament.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Test_Friends.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Test_Groups.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaTests\\Public\\Tests\\Test_Storage.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaTests.27.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\NakamaUnreal.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaAccount.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaAccountDevice.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaChannelTypes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaChat.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaError.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaFriend.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaGroup.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaLeaderboard.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaLogger.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaMatch.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaMatchTypes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaNotification.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaParty.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaPresence.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaRPC.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaRealtimeClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaRealtimeRequestContext.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaRtError.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaSession.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaStatus.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaStorageObject.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaStreams.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaTournament.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaUnreal.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaUser.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaUserSession.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Private\\NakamaUtils.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaAccount.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaAccountDevice.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaChannelTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaChat.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaError.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaFriend.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaGroup.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaLeaderboard.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaLogger.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaLoggingMacros.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaMatch.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaMatchTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaNotification.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaParty.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaPresence.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaRPC.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaRealtimeClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaRealtimeRequestContext.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaRtError.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaSession.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaStatus.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaStorageObject.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaStorageTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaStreams.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaTournament.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaUnreal.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaUser.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaUserSession.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Plugins\\Nakama\\Source\\NakamaUnreal\\Public\\NakamaUtils.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\NakamaUnreal.24.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\Starfall.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\Starfall.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\Starfall.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\StarfallCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\StarfallCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\StarfallGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\Source\\Starfall\\StarfallGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\sterling\\Documents\\Projects\\Starfall\\Starfall\\.vscode\\compileCommands_Starfall\\Starfall.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	}
+]
