@@ -110,9 +110,9 @@ public:
 	void Director();
 	void StartJump(const FInputActionValue& Value);
 	void StopJump();
-	void Crouch(const FInputActionValue& Value);
-	void UnCrouch();
-	void Sprint();	// const FInputActionValue& Value);
+	void StartCrouch(const FInputActionValue& Value);
+	void StopCrouch();
+	void StartSprint();	// const FInputActionValue& Value);
 	void StopSprint();
 	//	void StartLiftJump(const FInputActionValue& Value);
 	//	void Landed(const FHitResult& Hit);

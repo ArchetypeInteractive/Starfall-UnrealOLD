@@ -54,8 +54,11 @@ public:
 	float SprintSpeed;
 
 	void Landed(const FHitResult& Hit);
-	void Sprint();
-	void StopSprinting();
+	virtual void Sprint();
+	virtual void StopSprinting();
+	void StartCrouch();
+	//	void StopCrouch();
+
 	//	void StartLiftJump();	// Probably not needed
 	//	void ApplyLiftForce();
 	//	void StopLiftJump();

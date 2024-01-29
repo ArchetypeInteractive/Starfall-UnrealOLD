@@ -20,6 +20,10 @@
 
 AStarfallCharacter::AStarfallCharacter()
 {
+
+	WalkSpeed = 420.f;		//	We will move this into our custom movement component
+	SprintSpeed = 700.f;	//	We will move this into our custom movement component
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -31,7 +35,7 @@ AStarfallCharacter::AStarfallCharacter()
 	// instead of recompiling to adjust them
 	GetCharacterMovement()->JumpZVelocity = 700.f;
 	GetCharacterMovement()->AirControl = 0.35f;
-	GetCharacterMovement()->MaxWalkSpeed = 500.f;
+	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 	GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
@@ -49,8 +53,7 @@ AStarfallCharacter::AStarfallCharacter()
 	//	LiftAbilityClass = StarfallLiftAbility::StaticClass();
 
 
-	WalkSpeed = 600.f;
-	SprintSpeed = 1200.f;
+
 
 
 }
@@ -171,6 +174,22 @@ void AStarfallCharacter::StopSprinting()
 {
 	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 	UE_LOG(LogTemp, Display, TEXT("Stop Sprinting"));
+}
+
+
+void AStarfallCharacter::StartCrouch()
+{
+	FVector Velocity = GetVelocity();
+	float Speed = Velocity.Size();
+
+	if (Speed <= WalkSpeed)
+	{
+		Super::Crouch();
+		UE_LOG(LogTemp, Display, TEXT("Crouching"));
+	}
+	else {
+		UE_LOG(LogTemp, Display, TEXT("We gon' slide instead"));
+	}
 }
 
 

@@ -20,16 +20,19 @@ void AStarfallHeroController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UEnhancedInputLocalPlayerSubsystem* InputSubsystem = GetLocalPlayer()->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>();
-	if (InputSubsystem)
+	if (ULocalPlayer* LocalPlayer = GetLocalPlayer())
 	{
-		InputSubsystem->AddMappingContext(GameplayMappingContext, 0);
-		//	Subsystem->AddMappingContext(MenuMappingContext, 0);
+		UEnhancedInputLocalPlayerSubsystem* InputSubsystem = GetLocalPlayer()->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>();
+		if (InputSubsystem)
+		{
+			InputSubsystem->AddMappingContext(GameplayMappingContext, 0);
+			//	Subsystem->AddMappingContext(MenuMappingContext, 0);
 
-		UE_LOG(LogTemp, Log, TEXT("Subsystem retrieved successfully."));
-	}
-	else {
-		UE_LOG(LogTemp, Warning, TEXT("Failed to retrieve Enhanced Input Local Player Subsystem."));
+			UE_LOG(LogTemp, Log, TEXT("Subsystem retrieved successfully."));
+		}
+		else {
+			UE_LOG(LogTemp, Warning, TEXT("Failed to retrieve Enhanced Input Local Player Subsystem."));
+		}
 	}
 }
 
@@ -49,10 +52,10 @@ void AStarfallHeroController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::StartJump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopJump);
 
-		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::Crouch);
-		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Completed, this, &AStarfallHeroController::UnCrouch);
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::StartCrouch);
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopCrouch);
 
-		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &AStarfallHeroController::Sprint);
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartSprint);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopSprint);
 	}
 
@@ -123,7 +126,7 @@ void AStarfallHeroController::Move(const FInputActionValue& Value)
 	}
 }
 
-void AStarfallHeroController::Sprint() //const FInputActionValue& Value)
+void AStarfallHeroController::StartSprint() //const FInputActionValue& Value)
 {
 	//	FVector Input = Value.Get<FVector>();
 
@@ -169,23 +172,19 @@ void AStarfallHeroController::Look(const FInputActionValue& Value)
 }
 
 
-void AStarfallHeroController::Crouch(const FInputActionValue& Value)
+void AStarfallHeroController::StartCrouch(const FInputActionValue& Value)
 {
 	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
 	{
-		HeroPawn->Crouch();
-		//	HeroPawn->Look(Input);
-		UE_LOG(LogTemp, Display, TEXT("Crouching"));
+		HeroPawn->StartCrouch();
 	}
 }
 
-void AStarfallHeroController::UnCrouch()
+void AStarfallHeroController::StopCrouch()
 {
 	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
 	{
 		HeroPawn->UnCrouch();
-		//	HeroPawn->Look(Input);
-		UE_LOG(LogTemp, Display, TEXT("UnCrouching"));
 	}
 
 }
