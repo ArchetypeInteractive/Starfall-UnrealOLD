@@ -47,6 +47,12 @@ AStarfallCharacter::AStarfallCharacter()
 
 	AbilitySystem = CreateDefaultSubobject<UStarfallAbilitySystemComponent>(TEXT("Ability System Component"));
 	//	LiftAbilityClass = StarfallLiftAbility::StaticClass();
+
+
+	WalkSpeed = 600.f;
+	SprintSpeed = 1200.f;
+
+
 }
 
 void AStarfallCharacter::BeginPlay()
@@ -127,13 +133,12 @@ void AStarfallCharacter::StartJump(const FVector& JumpInput)
 		Super::Jump();
 		bIsLifting = false;
 	}
-	else if(!bIsLifting)
-	{
-		bIsLifting = true;
-		this->StartLiftJump();
-		OnLiftJumpActivated.ExecuteIfBound();
-		UE_LOG(LogTemp, Display, TEXT("Lift jump activated!"));
-	}
+	//	else if(!bIsLifting)
+	//	{
+	//		bIsLifting = true;
+	//		//	this->StartLiftJump();
+	//		OnLiftJumpActivated.ExecuteIfBound();
+	//	}
 }
 
 void AStarfallCharacter::StopJump()
@@ -151,8 +156,25 @@ void AStarfallCharacter::Landed(const FHitResult& Hit)
 
 	// Your custom logic here
 	this->StopJump();
+	UE_LOG(LogTemp, Display, TEXT("Landed from jump / fall"));
 }
 
+
+void AStarfallCharacter::Sprint()
+{
+
+	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+	UE_LOG(LogTemp, Display, TEXT("Sprinting"));
+}
+
+void AStarfallCharacter::StopSprinting()
+{
+	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+	UE_LOG(LogTemp, Display, TEXT("Stop Sprinting"));
+}
+
+
+/*
 void AStarfallCharacter::StartLiftJump()
 {
 		// Stop the timer if lifting is no longer active
@@ -190,3 +212,4 @@ void AStarfallCharacter::ApplyLiftForce()
 
 	UE_LOG(LogTemp, Display, TEXT("Applying Lift Force: %s"), *CombinedForce.ToString());
 }
+*/

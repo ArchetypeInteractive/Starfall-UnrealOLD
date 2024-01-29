@@ -53,6 +53,7 @@ void AStarfallHeroController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Completed, this, &AStarfallHeroController::UnCrouch);
 
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &AStarfallHeroController::Sprint);
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopSprint);
 	}
 
 
@@ -122,11 +123,23 @@ void AStarfallHeroController::Move(const FInputActionValue& Value)
 	}
 }
 
-void AStarfallHeroController::Sprint(const FInputActionValue& Value)
+void AStarfallHeroController::Sprint() //const FInputActionValue& Value)
 {
-	UE_LOG(LogTemp, Display, TEXT("Sprinting"));
+	//	FVector Input = Value.Get<FVector>();
+
+	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
+	{
+		HeroPawn->Sprint();
+	}
 }
 
+void AStarfallHeroController::StopSprint()
+{
+	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
+	{
+		HeroPawn->StopSprinting();
+	}
+}
 
 void AStarfallHeroController::Look(const FInputActionValue& Value)
 {

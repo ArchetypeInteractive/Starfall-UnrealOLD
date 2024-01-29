@@ -112,7 +112,8 @@ public:
 	void StopJump();
 	void Crouch(const FInputActionValue& Value);
 	void UnCrouch();
-	void Sprint(const FInputActionValue& Value);
+	void Sprint();	// const FInputActionValue& Value);
+	void StopSprint();
 	//	void StartLiftJump(const FInputActionValue& Value);
 	//	void Landed(const FHitResult& Hit);
 

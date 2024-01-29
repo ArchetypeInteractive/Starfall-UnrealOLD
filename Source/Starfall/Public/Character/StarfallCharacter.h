@@ -48,14 +48,16 @@ public:
 	void StopJump();
 	
 	
-	
-
 	FOnLiftJumpActivated OnLiftJumpActivated;
+	
+	float WalkSpeed;
+	float SprintSpeed;
 
 	void Landed(const FHitResult& Hit);
-	void StartLiftJump();
-
-	void ApplyLiftForce();
+	void Sprint();
+	void StopSprinting();
+	//	void StartLiftJump();	// Probably not needed
+	//	void ApplyLiftForce();
 	//	void StopLiftJump();
 
 	/*
