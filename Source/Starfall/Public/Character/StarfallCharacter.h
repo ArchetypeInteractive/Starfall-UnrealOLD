@@ -11,7 +11,6 @@
 //	#include "ALSCharacter.h"
 #include "AbilitySystemInterface.h"
 #include "GameFramework/Character.h"
-#include "Component/StarfallInventoryComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Component/StarfallAbilitySystemComponent.h"
 #include "StarfallCharacter.generated.h"
@@ -22,22 +21,8 @@
 
 
 
-
-UENUM(BlueprintType)
-enum class ECharacterState : uint8
-{
-	Idle        UMETA(DisplayName = "Idle"),
-	Walking     UMETA(DisplayName = "Walking"),
-	Sprinting   UMETA(DisplayName = "Sprinting"),
-	Crouching   UMETA(DisplayName = "Crouching"),
-	Sliding     UMETA(DisplayName = "Sliding")
-};
-
-
-
-
-
-DECLARE_DELEGATE(FOnLiftJumpActivated);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnCrouchEvent);
+//	DECLARE_DELEGATE(FOnLiftJumpActivated);
 
 UCLASS(config=Game)
 class AStarfallCharacter : public ACharacter, public IAbilitySystemInterface
@@ -45,8 +30,8 @@ class AStarfallCharacter : public ACharacter, public IAbilitySystemInterface
 	GENERATED_BODY()
 
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
-	TObjectPtr<UStarfallInventoryComponent> StarfallInventoryComponent;
+	//	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
+	//	TObjectPtr<UStarfallInventoryComponent> StarfallInventoryComponent;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true"))
 	class UStarfallAbilitySystemComponent* AbilitySystem;
@@ -59,8 +44,11 @@ public:
 	AStarfallCharacter();
 	
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
-	ECharacterState MovementState;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Movement")
+	void OnCrouchEvent();
+
+
 
 
 	/** Called for movement input */
@@ -76,9 +64,6 @@ public:
 
 	void StartJump(const FVector& JumpInput);
 	void StopJump();
-	
-	
-	FOnLiftJumpActivated OnLiftJumpActivated;
 	
 	float WalkSpeed;
 	float SprintSpeed;
@@ -100,16 +85,17 @@ protected:
 	}
 
 
-
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	bool bIsCrouching = false;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	bool bIsSliding = false;
-	bool bIsSprinting = false;
 	bool bIsJumping = false;
 
 
 
 	//	void Crouch(const FVector& CrouchInput);
 	//	void CrouchStop();
+
 
 
 private:

@@ -153,7 +153,7 @@ void AStarfallCharacter::Landed(const FHitResult& Hit)
 
 void AStarfallCharacter::Sprint()
 {
-
+	Super::UnCrouch();
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 	UE_LOG(LogTemp, Display, TEXT("Sprinting"));
 }
@@ -175,10 +175,13 @@ void AStarfallCharacter::StartCrouch()
 		bIsCrouching = true;
 		Super::Crouch();
 		UE_LOG(LogTemp, Display, TEXT("Crouching"));
+	
+		OnCrouchEvent();
+
 	}
 	else if (Speed >= WalkSpeed) 
 	{
-
+		bIsSliding = true;
 		UE_LOG(LogTemp, Display, TEXT("Sliding"));
 		/*
 		bIsSliding = true;
@@ -218,6 +221,8 @@ void AStarfallCharacter::StartCrouch()
 
 void AStarfallCharacter::StopCrouch()
 {
+	bIsCrouching = false;
+	bIsSliding = false;
 	Super::UnCrouch();
 	UE_LOG(LogTemp, Display, TEXT("Uncrouching"))
 }

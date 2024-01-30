@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Character/Component/StarfallInventoryComponent.h"
+#include "Character/Component/Inventory/StarfallInventoryComponent.h"
 
 // Sets default values for this component's properties
 UStarfallInventoryComponent::UStarfallInventoryComponent()
@@ -32,3 +32,18 @@ void UStarfallInventoryComponent::TickComponent(float DeltaTime, ELevelTick Tick
 	// ...
 }
 
+
+
+
+
+
+
+void UStarfallInventoryComponent::AddItemToInventory()	//	UItem* Item)
+{
+	//	Items.Add(Item);
+}
+
+
+//	Add to inventory
+//	Remove from inventory
+//	Consume item

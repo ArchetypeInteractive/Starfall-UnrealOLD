@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Character/StarfallCharacter.h"
-#include "Character/Component/StarfallInventoryComponent.h"
+#include "Character/Component/Inventory/StarfallInventoryComponent.h"
 #include "Logging/LogMacros.h"
 #include "EnhancedInputComponent.h"
 #include "StarfallHeroCharacter.generated.h"
