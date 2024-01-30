@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Character/StarfallCharacter.h"
 #include "Character/Component/Inventory/StarfallInventoryComponent.h"
+#include "Character/Component/Radar/StarfallRadarComponent.h"
 #include "Logging/LogMacros.h"
 #include "EnhancedInputComponent.h"
 #include "StarfallHeroCharacter.generated.h"
@@ -33,12 +34,16 @@ class STARFALL_API AStarfallHeroCharacter : public AStarfallCharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UCameraComponent> FirstPersonCamera;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UStarfallInventoryComponent> Inventory;
 
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Radar, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UStarfallRadarComponent> Radar;
 
 
+
+	
 
 
 public:
@@ -61,5 +66,7 @@ public:
 	/** Returns CameraBoom subobject **/
 	//	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
-	FORCEINLINE class UCameraComponent* GetFirstPersonCamera() const { return FirstPersonCamera; }
+	FORCEINLINE class UCameraComponent* GetFirstPersonCamera() const { return FirstPersonCamera; };
+	FORCEINLINE class UStarfallInventoryComponent* GetInventory() const { return Inventory; };
+	FORCEINLINE class UStarfallRadarComponent* GetRadar() const { return Radar; };
 };

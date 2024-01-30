@@ -41,6 +41,8 @@ AStarfallHeroCharacter::AStarfallHeroCharacter()
 
 	Inventory = CreateDefaultSubobject<UStarfallInventoryComponent>(TEXT("Inventory Component"));
 
+	Radar = CreateDefaultSubobject<UStarfallRadarComponent>(TEXT("Radar Component"));
+	Radar->TargetActorClass = AStarfallEnemyCharacter::StaticClass();
 	//	StarfallInventoryComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	//	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
