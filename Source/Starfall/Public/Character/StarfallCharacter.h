@@ -12,10 +12,31 @@
 #include "AbilitySystemInterface.h"
 #include "GameFramework/Character.h"
 #include "Component/StarfallInventoryComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Component/StarfallAbilitySystemComponent.h"
 #include "StarfallCharacter.generated.h"
 
-//	DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
+
+
+
+
+
+
+
+UENUM(BlueprintType)
+enum class ECharacterState : uint8
+{
+	Idle        UMETA(DisplayName = "Idle"),
+	Walking     UMETA(DisplayName = "Walking"),
+	Sprinting   UMETA(DisplayName = "Sprinting"),
+	Crouching   UMETA(DisplayName = "Crouching"),
+	Sliding     UMETA(DisplayName = "Sliding")
+};
+
+
+
+
+
 DECLARE_DELEGATE(FOnLiftJumpActivated);
 
 UCLASS(config=Game)
@@ -30,9 +51,18 @@ class AStarfallCharacter : public ACharacter, public IAbilitySystemInterface
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true"))
 	class UStarfallAbilitySystemComponent* AbilitySystem;
 
+
+
+
+
 public:
 	AStarfallCharacter();
 	
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
+	ECharacterState MovementState;
+
+
 	/** Called for movement input */
 	void Move(const FVector2D& MovementVector);
 
@@ -57,22 +87,10 @@ public:
 	virtual void Sprint();
 	virtual void StopSprinting();
 	void StartCrouch();
-	//	void StopCrouch();
+	void StopCrouch();
 
-	//	void StartLiftJump();	// Probably not needed
-	//	void ApplyLiftForce();
-	//	void StopLiftJump();
-
-	/*
-	void PerformLift();
-	bool CanLift() const;
-	UFUNCTION()
-	void ActivateAbility(ECelestialAbilities Ability);
-	TSubclassOf<UGameplayAbility> GetAbilityClass(ECelestialAbilities Ability) const;
-	
-	TSubclassOf<UGameplayAbility> LiftAbilityClass;
-	*/
-
+	void UpdateSlide();
+	void StopSlide();
 protected:
 	// To add mapping context
 	virtual void BeginPlay();
@@ -83,6 +101,10 @@ protected:
 
 
 
+	bool bIsCrouching = false;
+	bool bIsSliding = false;
+	bool bIsSprinting = false;
+	bool bIsJumping = false;
 
 
 
@@ -91,9 +113,10 @@ protected:
 
 
 private:
-	bool bIsLifting = false;
-	float LiftStrength; // Adjust as needed
-	float LiftDuration = 1.5f;   // Total duration of lift in seconds
-	FTimerHandle LiftTimerHandle;
+	FTimerHandle SlideTimerHandle;
+	float SlideStartTime = 0.f;  // Time when sliding started
+	const float SlideUpdateInterval = 0.05f;
+	float MaxSlideDuration = 2.0f;  // Maximum duration of slide
+	float MinSlideSpeed = 400.f;  // Minimum speed to maintain slide
 };
 

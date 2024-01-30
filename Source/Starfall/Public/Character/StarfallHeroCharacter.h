@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Character/StarfallCharacter.h"
+#include "Character/Component/StarfallInventoryComponent.h"
 #include "Logging/LogMacros.h"
 #include "EnhancedInputComponent.h"
 #include "StarfallHeroCharacter.generated.h"
@@ -32,13 +33,12 @@ class STARFALL_API AStarfallHeroCharacter : public AStarfallCharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UCameraComponent> FirstPersonCamera;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UStarfallInventoryComponent> Inventory;
 
 
 
 
-	/** Leave Activity Input Action */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-	UInputAction* LeaveActivityAction;
 
 
 public:

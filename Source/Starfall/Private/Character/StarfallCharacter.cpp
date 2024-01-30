@@ -13,10 +13,8 @@
 #include "InputActionValue.h"
 
 
-//	DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
-//////////////////////////////////////////////////////////////////////////
-// AStarfallCharacter
+
 
 AStarfallCharacter::AStarfallCharacter()
 {
@@ -44,13 +42,7 @@ AStarfallCharacter::AStarfallCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
 
-	//	Create a follow camera
-	StarfallInventoryComponent = CreateDefaultSubobject<UStarfallInventoryComponent>(TEXT("Inventory Component"));
-	//	StarfallInventoryComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	//	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
-	AbilitySystem = CreateDefaultSubobject<UStarfallAbilitySystemComponent>(TEXT("Ability System Component"));
-	//	LiftAbilityClass = StarfallLiftAbility::StaticClass();
 
 
 
@@ -62,8 +54,6 @@ void AStarfallCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
-	bIsLifting = false;
-	LiftStrength = 100.0f; // Adjust this value as needed
 }
 
 
@@ -134,7 +124,6 @@ void AStarfallCharacter::StartJump(const FVector& JumpInput)
 	if (GetCharacterMovement()->IsMovingOnGround())
 	{
 		Super::Jump();
-		bIsLifting = false;
 	}
 	//	else if(!bIsLifting)
 	//	{
@@ -149,8 +138,7 @@ void AStarfallCharacter::StopJump()
 	Super::StopJumping();
 	//	UE_LOG(LogTemp, Display, TEXT("Stopping jump"));
 
-	bIsLifting = false;
-	GetWorldTimerManager().ClearTimer(LiftTimerHandle);
+	//	GetWorldTimerManager().ClearTimer(LiftTimerHandle);
 }
 
 void AStarfallCharacter::Landed(const FHitResult& Hit)
@@ -184,51 +172,100 @@ void AStarfallCharacter::StartCrouch()
 
 	if (Speed <= WalkSpeed)
 	{
+		bIsCrouching = true;
 		Super::Crouch();
 		UE_LOG(LogTemp, Display, TEXT("Crouching"));
 	}
-	else {
-		UE_LOG(LogTemp, Display, TEXT("We gon' slide instead"));
-	}
-}
-
-
-/*
-void AStarfallCharacter::StartLiftJump()
-{
-		// Stop the timer if lifting is no longer active
-		//GetWorldTimerManager().ClearTimer(LiftTimerHandle);
-	
-	if (!bIsLifting && !GetCharacterMovement()->IsMovingOnGround())
+	else if (Speed >= WalkSpeed) 
 	{
-		bIsLifting = true;
-		GetWorldTimerManager().SetTimer(LiftTimerHandle, this, &AStarfallCharacter::ApplyLiftForce, 0.1f, true, 0.0f);
+
+		UE_LOG(LogTemp, Display, TEXT("Sliding"));
+		/*
+		bIsSliding = true;
+
+
+		GetWorldTimerManager().SetTimer(SlideTimerHandle, this, &AStarfallCharacter::UpdateSlide, SlideUpdateInterval, true);
+		*/
+
+		//	set character's state to sliding
+		//	We need to get the direction of the character's movement
+		//	ignore move input
+		//  use three lerps connected to the sprint charge to determine the slide's speed
+		//	lerp 1: 1.0f -> 0.5f
+		//	lerp 2: 2.0f -> 1.25f
+		//	lerp 3: 0.65f -> 5.0f
+		//  these lerps are plugged into a "set play rate" node
+		//  the play rates are plugged into a Timeline node
+		//  Timeline:
+		//    Length: 1:00
+		//    Enable use last keyframe
+		//	  Float curve named "SlideAlpha"
+		//	  Float: (0.0, 1.0) -> (1.0, 0.0)
+		//  After the timeline,
+		//  add a new lerp to set the character's max walk speed targeting the character movement component
+		//  lerp: A: WalkSpeed * 0.65f, B: WalkSpeed * output of third Lerp from timeline, alpha: slide out from timeline
+		//  After setting max walk speed,
+		//	Set Braking Friction Factor to Slide Out from Timeline - 1.0f
+		//	Add movement input
+		//    World Direction: Slide Direction
+		//    Scale Value: Slide out from Timeline
+		//    Force: true
+	
+		//  Going back to Timeline, Finished should set the character's state to crouching
+	
+	}
+}
+
+void AStarfallCharacter::StopCrouch()
+{
+	Super::UnCrouch();
+	UE_LOG(LogTemp, Display, TEXT("Uncrouching"))
+}
+
+
+void AStarfallCharacter::UpdateSlide()
+{
+	float ElapsedTime = GetWorld()->GetTimeSeconds() - SlideStartTime;
+	float SlideAlpha = ElapsedTime / MaxSlideDuration;
+
+	SlideAlpha = FMath::Clamp(SlideAlpha, 0.0f, 1.0f);
+
+	// Calculate Lerp values based on SlideAlpha
+	float Lerp1 = FMath::Lerp(1.0f, 0.5f, SlideAlpha);
+	float Lerp2 = FMath::Lerp(2.0f, 1.25f, SlideAlpha);
+	float Lerp3 = FMath::Lerp(0.65f, 5.0f, SlideAlpha);
+
+	// Adjust character movement based on lerps
+	float NewSpeed = FMath::Lerp(WalkSpeed * 0.65f, WalkSpeed * Lerp3, SlideAlpha);
+	GetCharacterMovement()->MaxWalkSpeed = NewSpeed;
+	GetCharacterMovement()->BrakingFrictionFactor = SlideAlpha - 1.0f;
+
+	// Add movement input
+	FVector SlideDirection = GetVelocity().GetSafeNormal();
+	AddMovementInput(SlideDirection, SlideAlpha, true);
+
+
+
+
+
+	if (ElapsedTime > MaxSlideDuration)
+	{
+		StopSlide();  // End slide after maximum duration
+		GetWorldTimerManager().ClearTimer(SlideTimerHandle);
+	}
+
+	if (GetVelocity().Size() < MinSlideSpeed)
+	{
+		StopSlide();  // End slide if speed drops below minimum
+		GetWorldTimerManager().ClearTimer(SlideTimerHandle);
 	}
 }
 
 
-void AStarfallCharacter::ApplyLiftForce()
+void AStarfallCharacter::StopSlide()
 {
-	FVector CurrentVelocity = GetVelocity();
-	FVector ForwardVelocity = FVector(CurrentVelocity.X, CurrentVelocity.Y, 0); // Preserve only the horizontal components
+	// Cleanup and end sliding
 
-	// Determine the forward force based on the current forward velocity
-	float ForwardScale = 0.5f; // Adjust this value to your needs
-	FVector ForwardForce = ForwardVelocity * ForwardScale;
+	UE_LOG(LogTemp, Display, TEXT("Ending slide"));
 
-	// Calculate the lift force
-	FVector LiftForce = FVector(0, 0, LiftStrength);
-
-	// Combine forward force and lift force
-	FVector CombinedForce = LiftForce + ForwardForce;
-
-	// Apply the combined force to the character's velocity
-	GetCharacterMovement()->Velocity += CombinedForce;
-
-	// Clamp the velocity to a maximum value
-	float MaxSpeed = 1200.0f; // Set this to your desired maximum speed
-	GetCharacterMovement()->Velocity = GetCharacterMovement()->Velocity.GetClampedToMaxSize(MaxSpeed);
-
-	UE_LOG(LogTemp, Display, TEXT("Applying Lift Force: %s"), *CombinedForce.ToString());
 }
-*/

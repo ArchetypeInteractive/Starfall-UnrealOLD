@@ -52,37 +52,13 @@ void AStarfallHeroController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::StartJump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopJump);
 
-		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::StartCrouch);
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartCrouch);
 		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopCrouch);
 
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartSprint);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopSprint);
 	}
-
-
-
-
-
-	//		//	EnhancedInputComponent->BindAction(DirectorAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::Director);
-	//	
-	//	
-	//		//	...
-	//	
-	//	
-	//		//	EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AStarfallHeroCharacter::StartLiftJump);
-	//	
-	//		//	EnhancedInputComponent->BindAction(LiftAction, ETriggerEvent::Triggered, this, &AStarfallHeroCharacter::StartLiftJump);
-	//		//	EnhancedInputComponent->BindAction(LiftAction, ETriggerEvent::Completed, this, &AStarfallHeroCharacter::StopJump);
-	//	
-	//		//	EnhancedInputComponent->BindAction(LeaveActivityAction, ETriggerEvent::Triggered, this, &AStarfallHeroCharacter::LeaveActivity);
-	//	}
-	//	else
-	//	{
-	//		//	UE_LOG(LogTemp, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
-	//	}
 }
-/*
-*/
 
 
 
@@ -184,7 +160,7 @@ void AStarfallHeroController::StopCrouch()
 {
 	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
 	{
-		HeroPawn->UnCrouch();
+		HeroPawn->StopCrouch();
 	}
 
 }

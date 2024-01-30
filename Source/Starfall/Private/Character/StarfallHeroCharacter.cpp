@@ -14,8 +14,6 @@
 
 AStarfallHeroCharacter::AStarfallHeroCharacter()
 {
-
-
 	// rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = true;	//  Lets us look up and down
@@ -36,6 +34,18 @@ AStarfallHeroCharacter::AStarfallHeroCharacter()
 	FirstPersonCamera->SetRelativeLocation(FVector(7.0f, 24.0f, 0.0f));
 	FirstPersonCamera->SetRelativeRotation(FRotator(0.0f, 90.0f, -90.0f));
 	FirstPersonCamera->bUsePawnControlRotation = true; // Camera does not rotate relative to arm
+	//	Create a follow camera
+
+
+
+
+	Inventory = CreateDefaultSubobject<UStarfallInventoryComponent>(TEXT("Inventory Component"));
+
+	//	StarfallInventoryComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+	//	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+
+	//	AbilitySystem = CreateDefaultSubobject<UStarfallAbilitySystemComponent>(TEXT("Ability System Component"));
+	//	LiftAbilityClass = StarfallLiftAbility::StaticClass();
 }
 
 void AStarfallHeroCharacter::BeginPlay()

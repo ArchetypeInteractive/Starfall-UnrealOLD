@@ -7,18 +7,38 @@
     <!-- Start Screen -->
     <Grid x:Name="StartScreen">
 
-        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Ellipse
-                Margin="20"
-                Width="150"
-                Height="150"
-                Stroke="Green"
-                Fill="Transparent"
-                StrokeThickness="2"
-                Canvas.Left="10"
-                Canvas.Top="10"
-            />
-        </Canvas>
+    <Canvas HorizontalAlignment="Left" VerticalAlignment="Top">
+        <!-- Background for the blur and darkening effect -->
+        <Border Canvas.Left="10" Canvas.Top="10" Width="150" Height="150">
+            <Border.Background>
+                <VisualBrush>
+                    <VisualBrush.Visual>
+                        <!-- The content that you want to blur and darken -->
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Border.Background>
+            <Border.Effect>
+                <!-- Apply blur effect -->
+                <BlurEffect Radius="10"/>
+            </Border.Effect>
+            <Border.OpacityMask>
+                <!-- Darken the background -->
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </Border.OpacityMask>
+        </Border>
+
+        <!-- Your existing Ellipse -->
+        <Ellipse
+            Margin="20"
+            Width="150"
+            Height="150"
+            Stroke="Green"
+            Fill="Transparent"
+            StrokeThickness="2"
+            Canvas.Left="10"
+            Canvas.Top="10"
+        />
+    </Canvas>
         
         
         <Ellipse Width="10" Height="10" Stroke="White" Fill="Black" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
