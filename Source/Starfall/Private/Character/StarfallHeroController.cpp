@@ -49,7 +49,7 @@ void AStarfallHeroController::SetupInputComponent()
 	
 
 
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::StartJump);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartJump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopJump);
 
 		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartCrouch);
@@ -173,7 +173,7 @@ void AStarfallHeroController::StartJump(const FInputActionValue& Value)
 
 	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
 	{
-		HeroPawn->Jump();
+		HeroPawn->StartJump(Input);
 		//	UE_LOG(LogTemp, Display, TEXT("Jumping"));
 	}
 }

@@ -121,9 +121,11 @@ void AStarfallCharacter::Look(const FVector2D& LookInput)
 
 void AStarfallCharacter::StartJump(const FVector& JumpInput)
 {
+	StopCrouch();
 	if (GetCharacterMovement()->IsMovingOnGround())
 	{
 		Super::Jump();
+		UE_LOG(LogTemp, Display, TEXT("Starting jump"));
 	}
 	//	else if(!bIsLifting)
 	//	{
@@ -136,6 +138,7 @@ void AStarfallCharacter::StartJump(const FVector& JumpInput)
 void AStarfallCharacter::StopJump()
 {
 	Super::StopJumping();
+	UE_LOG(LogTemp, Display, TEXT("Stopping jump"));
 	//	UE_LOG(LogTemp, Display, TEXT("Stopping jump"));
 
 	//	GetWorldTimerManager().ClearTimer(LiftTimerHandle);
@@ -153,7 +156,7 @@ void AStarfallCharacter::Landed(const FHitResult& Hit)
 
 void AStarfallCharacter::Sprint()
 {
-	Super::UnCrouch();
+	StopCrouch();
 	GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 	UE_LOG(LogTemp, Display, TEXT("Sprinting"));
 }
