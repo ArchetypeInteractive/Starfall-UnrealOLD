@@ -63,7 +63,7 @@ void UStarfallRadarComponent::HandleBeginOverlap(UPrimitiveComponent* Overlapped
 
 void UStarfallRadarComponent::HandleEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (OtherActor && OtherActor->IsA(TargetActorClass))
+	if (OtherActor && OtherActor->IsA(TargetActorClass))	// we will eventually change this to tag instead
 	{
 		AStarfallEnemyCharacter* EnemyActor = Cast<AStarfallEnemyCharacter>(OtherActor);
 		TrackedActors.Remove(EnemyActor);
@@ -86,13 +86,17 @@ void UStarfallRadarComponent::UpdateTrackedActors()
 			if (TrackedActor)
 			{
 				FVector RelativePosition = TrackedActor->GetActorLocation() - PlayerLocation;
+
 				UE_LOG(LogTemp, Display, TEXT("Enemy Detected"));
 				
 				//	Adjust based on player's rotation if the radar is orientation-sensitive
-				//	RelativePosition = PlayerRotation.UnrotateVector(RelativePosition);
+				RelativePosition = PlayerRotation.UnrotateVector(RelativePosition);
 				
 				RadarData.Add(FStarfallRadarData{ TrackedActor, RelativePosition });
 
+
+				UE_LOG(LogTemp, Display, TEXT("TrackedActor Relative Position: %s"), *RelativePosition.ToString());
+				
 				// Now RelativePosition holds the position of the tracked actor relative to the player
 				// This can be used to update the radar UI
 			}
