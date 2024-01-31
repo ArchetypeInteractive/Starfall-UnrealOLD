@@ -13,16 +13,6 @@ UStarfallRadarComponent::UStarfallRadarComponent()
 	//	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
-
-
-
-	Radius = 1000.f;
-	Height = 1000.f;
-
-
-
-
-
 }
 
 
@@ -58,45 +48,6 @@ void UStarfallRadarComponent::BeginPlay()
 	}
 }
 
-/*
-void UStarfallRadarComponent::HandleBeginOverlap(UPrimitiveComponent* OverlappedComponent, AStarfallEnemyCharacter* EnemyActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	//	Add the enemy actor to the tracked actors array
-
-	if (EnemyActor && !TrackedActors.Contains(EnemyActor))
-	{
-		TrackedActors.Add(EnemyActor);
-	}
-}
-
-void UStarfallRadarComponent::HandleEndOverlap(UPrimitiveComponent* OverlappedComponent, AStarfallEnemyCharacter* EnemyActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	//	Remove the enemy actor to the tracked actors array
-	TrackedActors.Remove(EnemyActor);
-}
-
-
-//	WORKING CODE:
-void UStarfallRadarComponent::HandleBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	AStarfallEnemyCharacter* Enemy = Cast<AStarfallEnemyCharacter>(OtherActor);
-	if (Enemy && !TrackedActors.Contains(Enemy))
-	{
-		TrackedActors.Add(Enemy);
-		UE_LOG(LogTemp, Display, TEXT("Enemy within range, need to grab reference and add to TrackedActors"));
-	}
-}
-
-void UStarfallRadarComponent::HandleEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	AStarfallEnemyCharacter* EnemyActor = Cast<AStarfallEnemyCharacter>(OtherActor);
-	TrackedActors.Remove(EnemyActor);
-	UE_LOG(LogTemp, Display, TEXT("Removing enemy from TrackedActors, out of range"));
-}
-
-*/
-
-
 void UStarfallRadarComponent::HandleBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor && OtherActor->IsA(TargetActorClass) && !TrackedActors.Contains(OtherActor))
@@ -119,10 +70,6 @@ void UStarfallRadarComponent::HandleEndOverlap(UPrimitiveComponent* OverlappedCo
 		UE_LOG(LogTemp, Display, TEXT("Removing enemy from TrackedActors, out of range"));
 	}
 }
-
-
-
-
 
 void UStarfallRadarComponent::UpdateTrackedActors()
 {

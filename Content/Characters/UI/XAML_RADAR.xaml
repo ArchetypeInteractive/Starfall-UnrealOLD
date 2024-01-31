@@ -5,11 +5,11 @@
 
     <Canvas>
         <Ellipse
-            Width="150"
-            Height="150"
-            Stroke="Green"
-            Fill="Transparent"
-            StrokeThickness="2"
+            Width="120"
+            Height="120"
+            Stroke="Transparent"
+            Fill="Black"
+            StrokeThickness="0"
             Canvas.Left="10"
             Canvas.Top="10"
         />

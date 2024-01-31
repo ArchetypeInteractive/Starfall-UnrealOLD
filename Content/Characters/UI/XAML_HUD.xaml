@@ -15,7 +15,7 @@
         
 
         <!-- Reticle! -->
-        <Ellipse Width="10" Height="10" Stroke="White" Fill="Black" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Ellipse Width="10" Height="10" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <Button Content="Hello button" Click="Button_Click"/>
 
