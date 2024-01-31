@@ -5,13 +5,13 @@
     HorizontalAlignment="Stretch" 
     VerticalAlignment="Stretch">
 
-    <!-- Start Screen -->
-    <Grid x:Name="StartScreen">
+    <!-- Radar -->
+    <hud:Radar x:Name="Radar" />
+    
+    <!--
+        <Grid x:Name="StartScreen">
 
-        <hud:Radar x:Name="Radar" />
-            <!--
                 Visibility="{Binding bIsRadarVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
-            -->
         
 
         <!-- Reticle! -->
@@ -24,4 +24,5 @@
         <!-- Weapons -->
 
     </Grid>
+    -->
 </UserControl>
