@@ -18,4 +18,7 @@ class STARFALL_API AStarfallEnemyCharacter : public AStarfallCharacter
 public:
 	AStarfallEnemyCharacter();
 
+	void PickRandomTarget();
+	//	void MoveToTarget();
+	//	void AttackTarget();
 };

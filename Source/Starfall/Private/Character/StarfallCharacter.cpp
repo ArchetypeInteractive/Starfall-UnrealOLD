@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Character/StarfallCharacter.h"
+#include "Character/Enemy/StarfallEnemyCharacter.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -42,8 +43,11 @@ AStarfallCharacter::AStarfallCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
 
+	//	Inventory = CreateDefaultSubobject<UStarfallInventoryComponent>(TEXT("Inventory Component"));
 
-
+	Radar = CreateDefaultSubobject<UStarfallRadarComponent>(TEXT("Radar Component"));
+	Radar->TargetActorClass = AStarfallEnemyCharacter::StaticClass();
+	//	Radar->OnTrackedActorsUpdated.AddDynamic(this, &UStarfallRadarComponent::YourFunction);
 
 
 

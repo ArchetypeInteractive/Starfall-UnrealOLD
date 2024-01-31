@@ -2,7 +2,8 @@
 
 
 #include "Character/Component/Radar/StarfallRadarComponent.h"
-#include "Character/StarfallHeroCharacter.h"
+#include "CoreMinimal.h"
+#include "Character/StarfallCharacter.h"
 #include "Components/CapsuleComponent.h"
 
 //	Sets default values for this component's properties
@@ -15,7 +16,6 @@ UStarfallRadarComponent::UStarfallRadarComponent()
 	// ...
 }
 
-
 // Called when the game starts
 void UStarfallRadarComponent::BeginPlay()
 {
@@ -25,14 +25,14 @@ void UStarfallRadarComponent::BeginPlay()
 
 	GetWorld()->GetTimerManager().SetTimer(UpdateTimerHandle, this, &UStarfallRadarComponent::UpdateTrackedActors, UpdateInterval, true);
 
-	AStarfallHeroCharacter* HeroCharacter = Cast<AStarfallHeroCharacter>(GetOwner());
-	if (HeroCharacter)
+	AStarfallCharacter* Character = Cast<AStarfallCharacter>(GetOwner());
+	if (Character)
 	{
 		// Create the capsule component for radar detection
-		UCapsuleComponent* RadarCapsule = NewObject<UCapsuleComponent>(HeroCharacter, UCapsuleComponent::StaticClass());
+		UCapsuleComponent* RadarCapsule = NewObject<UCapsuleComponent>(Character, UCapsuleComponent::StaticClass());
 		if (RadarCapsule)
 		{
-			RadarCapsule->AttachToComponent(HeroCharacter->GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+			RadarCapsule->AttachToComponent(Character->GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
 			RadarCapsule->SetCapsuleSize(Radius, Height);
 			RadarCapsule->SetCollisionProfileName(TEXT("Radar"));
 
@@ -46,28 +46,33 @@ void UStarfallRadarComponent::BeginPlay()
 			RadarCapsule->OnComponentEndOverlap.AddDynamic(this, &UStarfallRadarComponent::HandleEndOverlap);
 		}
 	}
+
+	
 }
 
 void UStarfallRadarComponent::HandleBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor && OtherActor->IsA(TargetActorClass) && !TrackedActors.Contains(OtherActor))
+	if (OtherActor && !TrackedActors.Contains(OtherActor))
 	{
-		AStarfallEnemyCharacter* Enemy = Cast<AStarfallEnemyCharacter>(OtherActor);
-		if (Enemy && !TrackedActors.Contains(Enemy))
+		for (const FName& Tag : TrackedTags)
 		{
-			TrackedActors.Add(Enemy);
-			UE_LOG(LogTemp, Display, TEXT("Enemy within range, need to grab reference and add to TrackedActors"));
+			if (OtherActor->ActorHasTag(Tag))
+			{
+				TrackedActors.Add(OtherActor);
+				UE_LOG(LogTemp, Display, TEXT("Actor within range, added to TrackedActors"));
+				break; // Exit the loop once a matching tag is found
+			}
 		}
 	}
 }
 
 void UStarfallRadarComponent::HandleEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (OtherActor && OtherActor->IsA(TargetActorClass))	// we will eventually change this to tag instead
+	// Same tag check as in BeginOverlap
+	if (OtherActor)
 	{
-		AStarfallEnemyCharacter* EnemyActor = Cast<AStarfallEnemyCharacter>(OtherActor);
-		TrackedActors.Remove(EnemyActor);
-		UE_LOG(LogTemp, Display, TEXT("Removing enemy from TrackedActors, out of range"));
+		TrackedActors.Remove(OtherActor);
+		UE_LOG(LogTemp, Display, TEXT("Actor out of range, removed from TrackedActors"));
 	}
 }
 
@@ -93,7 +98,7 @@ void UStarfallRadarComponent::UpdateTrackedActors()
 				RelativePosition = PlayerRotation.UnrotateVector(RelativePosition);
 				
 				RadarData.Add(FStarfallRadarData{ TrackedActor, RelativePosition });
-
+				OnTrackedActorsUpdated.Broadcast();
 
 				UE_LOG(LogTemp, Display, TEXT("TrackedActor Relative Position: %s"), *RelativePosition.ToString());
 				
@@ -103,18 +108,3 @@ void UStarfallRadarComponent::UpdateTrackedActors()
 		}
 	}
 }
-
-
-
-
-
-
-// Called every frame
-/*
-void UStarfallRadarComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
-}
-*/

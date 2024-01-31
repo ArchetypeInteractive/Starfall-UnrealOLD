@@ -7,12 +7,12 @@
 
 
 #include "CoreMinimal.h"
-//	#include "ALS-Refactored/ALSCharacter.h"
-//	#include "ALSCharacter.h"
-#include "AbilitySystemInterface.h"
+//	#include "Character/Component/Inventory/StarfallInventoryComponent.h"
+#include "Character/Component/Radar/StarfallRadarComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "Component/StarfallAbilitySystemComponent.h"
+//	#include "AbilitySystemInterface.h"
+//	#include "Component/StarfallAbilitySystemComponent.h"
 #include "StarfallCharacter.generated.h"
 
 
@@ -24,8 +24,8 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnCrouchEvent);
 //	DECLARE_DELEGATE(FOnLiftJumpActivated);
 
-UCLASS(config=Game)
-class AStarfallCharacter : public ACharacter, public IAbilitySystemInterface
+UCLASS()
+class AStarfallCharacter : public ACharacter //, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
@@ -33,9 +33,15 @@ class AStarfallCharacter : public ACharacter, public IAbilitySystemInterface
 	//	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	//	TObjectPtr<UStarfallInventoryComponent> StarfallInventoryComponent;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true"))
-	class UStarfallAbilitySystemComponent* AbilitySystem;
+	//	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true"))
+	//	class UStarfallAbilitySystemComponent* AbilitySystem;
 
+	//	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+	//	TObjectPtr<UStarfallInventoryComponent> Inventory;
+
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Radar, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UStarfallRadarComponent> Radar;
 
 
 
@@ -79,10 +85,10 @@ public:
 protected:
 	// To add mapping context
 	virtual void BeginPlay();
-	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override
-	{
-		return AbilitySystem;
-	}
+	//	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override
+	//	{
+	//		return AbilitySystem;
+	//	}
 
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
@@ -104,5 +110,13 @@ private:
 	const float SlideUpdateInterval = 0.05f;
 	float MaxSlideDuration = 2.0f;  // Maximum duration of slide
 	float MinSlideSpeed = 400.f;  // Minimum speed to maintain slide
+
+
+
+
+
+
+	//	FORCEINLINE class UStarfallInventoryComponent* GetInventory() const { return Inventory; };
+	FORCEINLINE class UStarfallRadarComponent* GetRadar() const { return Radar; };
 };
 
