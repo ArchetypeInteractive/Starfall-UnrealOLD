@@ -39,7 +39,9 @@ public:
 
     FVector GetTrackedActorLocation(AActor* TrackedActor);
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Capsule")
     float Radius;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Capsule")
     float Height;
 
 protected:
