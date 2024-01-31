@@ -6,22 +6,13 @@
     VerticalAlignment="Stretch">
 
 
+    <!-- XAML Button just to test to see if this works -->
+    <launch.Loading x.Name="Loading" />
 
-    <Grid>
-        <launch:Loading x:Name="Loading" 
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-        />
-    </Grid>
-
-    <!-- Start -->
+    <!-- Start
     <Grid x:Name="Start" Visibility="Collapsed">
         <TextBlock Text="STARFALL" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold"/>
         <TextBlock Text="Press [ SPACE ] to continue" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="40" FontSize="24"/>
     </Grid>
-
-    <!-- Loading Screen -->
-    <Grid x:Name="LoadingScreen" Background="Blue" Visibility="Collapsed">
-        <TextBlock Text="Loading..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" />  
-    </Grid>
+    -->
 </UserControl>
