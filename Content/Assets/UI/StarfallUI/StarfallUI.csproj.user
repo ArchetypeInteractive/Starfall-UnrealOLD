@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Launch\CharacterCreation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Launch\CharacterSelection.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Launch\Loading.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Launch\Launch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Launch\Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Launch\CharacterCreation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Launch\CharacterSelection.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Launch\Launch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Launch\Loading.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Launch\Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
