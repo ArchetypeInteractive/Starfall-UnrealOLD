@@ -33,6 +33,10 @@
 		{
 			"Name": "NoesisGUI",
 			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
 		}
 	]
 }
