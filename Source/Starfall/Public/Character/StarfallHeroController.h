@@ -74,6 +74,16 @@ class STARFALL_API AStarfallHeroController : public APlayerController
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = GameplayInput, meta = (AllowPrivateAccess = "true"))
 	UInputAction* SprintAction;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = GameplayInput, meta = (AllowPrivateAccess = "true"))
+	UInputAction* AimWeaponAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = GameplayInput, meta = (AllowPrivateAccess = "true"))
+	UInputAction* FireWeaponAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = GameplayInput, meta = (AllowPrivateAccess = "true"))
+	UInputAction* SwitchWeaponAction;
 	//	UEnhancedInputComponent* _EnhancedInputComponent;
 	
 
@@ -114,6 +124,16 @@ public:
 	void StopCrouch();
 	void StartSprint();	// const FInputActionValue& Value);
 	void StopSprint();
+
+
+	void AimWeapon(const FInputActionValue& Value);
+	void StopAimWeapon();
+	void FireWeapon(const FInputActionValue& Value);
+	void StopFireWeapon();
+
+	void SwitchWeapon(const FInputActionValue& Value);
+	void SwitchWeaponToHeavy(const FInputActionValue& Value);
+	void StopSwitchWeapon();
 	//	void StartLiftJump(const FInputActionValue& Value);
 	//	void Landed(const FHitResult& Hit);
 
@@ -127,4 +147,10 @@ protected:
 	virtual void BeginPlay();
 	//	APawn interface
 	virtual void SetupInputComponent();
+
+	void OnWeaponSwitchHoldDetected();
+
+	FTimerHandle HoldTimerHandle;
+	bool bIsSwitchWeaponInputHeld = false;
+	float HoldThreshold = 0.25f; // Seconds to distinguish between tap and hold
 };

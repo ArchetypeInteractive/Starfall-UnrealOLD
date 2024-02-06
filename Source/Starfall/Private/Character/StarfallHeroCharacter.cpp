@@ -27,16 +27,17 @@ AStarfallHeroCharacter::AStarfallHeroCharacter()
 	//	CameraBoom->TargetArmLength = 400.0f; // The camera follows at this distance behind the character	
 	//	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
-	// Create a follow camera
+	//	Create a follow camera
 	//	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FirstPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
-	FirstPersonCamera->SetupAttachment(GetMesh(), "head");
-	FirstPersonCamera->SetRelativeLocation(FVector(7.0f, 24.0f, 0.0f));
-	FirstPersonCamera->SetRelativeRotation(FRotator(0.0f, 90.0f, -90.0f));
-	FirstPersonCamera->bUsePawnControlRotation = true; // Camera does not rotate relative to arm
+	//	FirstPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
+	//	FirstPersonCamera->SetupAttachment(GetMesh(), "head");
+	//	FirstPersonCamera->SetRelativeLocation(FVector(7.0f, 24.0f, 0.0f));
+	//	FirstPersonCamera->SetRelativeRotation(FRotator(0.0f, 90.0f, -90.0f));
+	//	FirstPersonCamera->bUsePawnControlRotation = true; // Camera does not rotate relative to arm
 	//	Create a follow camera
 
 
+	Arsenal = CreateDefaultSubobject<UStarfallArsenalComponent>(TEXT("Arsenal"));
 
 
 	//	StarfallInventoryComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation

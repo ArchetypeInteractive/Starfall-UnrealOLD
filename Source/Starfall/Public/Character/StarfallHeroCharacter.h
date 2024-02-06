@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Character/StarfallCharacter.h"
-
+#include "Character/Component/Arsenal/StarfallArsenalComponent.h"
 #include "Logging/LogMacros.h"
 #include "EnhancedInputComponent.h"
 #include "StarfallHeroCharacter.generated.h"
@@ -34,12 +34,17 @@ class STARFALL_API AStarfallHeroCharacter : public AStarfallCharacter
 	TObjectPtr<UCameraComponent> FirstPersonCamera;
 
 
+public:
+	AStarfallHeroCharacter();
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UStarfallArsenalComponent> Arsenal;
+
+	//	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+	//	TObjectPtr<UStarfallInventoryComponent> Inventory;
 	
 
 
-public:
-	AStarfallHeroCharacter();
 
 
 

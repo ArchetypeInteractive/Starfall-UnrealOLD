@@ -55,8 +55,6 @@ public:
 	void OnCrouchEvent();
 
 
-
-
 	/** Called for movement input */
 	void Move(const FVector2D& MovementVector);
 
@@ -82,6 +80,10 @@ public:
 
 	void UpdateSlide();
 	void StopSlide();
+
+
+
+
 protected:
 	// To add mapping context
 	virtual void BeginPlay();

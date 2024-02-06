@@ -7,39 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Launch\CharacterCreation.xaml.cs">
+    <Compile Update="HeadsUpDisplay\HUDWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Launch\CharacterSelection.xaml.cs">
+    <Compile Update="Menu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Launch\Loading.xaml.cs">
+    <Compile Update="Start\CharacterSelection.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Launch\Launch.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Launch\Window.xaml.cs">
+    <Compile Update="Start\StartScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Launch\CharacterCreation.xaml">
+    <Page Update="HeadsUpDisplay\HUDWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Launch\CharacterSelection.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Launch\Launch.xaml">
+    <Page Update="Menu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Launch\Loading.xaml">
+    <Page Update="Start\CharacterSelection.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Launch\Window.xaml">
+    <Page Update="Start\StartScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

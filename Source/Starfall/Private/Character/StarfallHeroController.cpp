@@ -57,6 +57,21 @@ void AStarfallHeroController::SetupInputComponent()
 
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartSprint);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopSprint);
+	
+
+		EnhancedInputComponent->BindAction(AimWeaponAction, ETriggerEvent::Started, this, &AStarfallHeroController::AimWeapon);
+		EnhancedInputComponent->BindAction(AimWeaponAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopAimWeapon);
+
+
+		//	This can be a continuous action or a single press action
+		EnhancedInputComponent->BindAction(FireWeaponAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::FireWeapon);
+		//	EnhancedInputComponent->BindAction(FireWeaponAction, ETriggerEvent::Started, this, &AStarfallHeroController::FireWeapon);
+		EnhancedInputComponent->BindAction(FireWeaponAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopFireWeapon);
+
+		//	EnhancedInputComponent->BindAction(SwitchWeaponAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::SwitchWeapon);
+		EnhancedInputComponent->BindAction(SwitchWeaponAction, ETriggerEvent::Started, this, &AStarfallHeroController::SwitchWeapon);
+		EnhancedInputComponent->BindAction(SwitchWeaponAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopSwitchWeapon);
+
 	}
 }
 
@@ -189,15 +204,85 @@ void AStarfallHeroController::StopJump()
 
 
 
+void AStarfallHeroController::AimWeapon(const FInputActionValue& Value)
+{
+	UE_LOG(LogTemp, Display, TEXT("Aiming"));
+}
+
+void AStarfallHeroController::StopAimWeapon()
+{
+	UE_LOG(LogTemp, Display, TEXT("Stop aiming"));
+}
 
 
+void AStarfallHeroController::FireWeapon(const FInputActionValue& Value)
+{
+	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
+	{
+		if (HeroPawn->Arsenal)
+		{
+			if (HeroPawn->Arsenal->ActiveWeapon)
+			{
+				HeroPawn->Arsenal->ActiveWeapon->ShootWeapon();
+			}
+		}
+		else {
+			UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
+		}
+	}
+}
+
+void AStarfallHeroController::StopFireWeapon()
+{
+	UE_LOG(LogTemp, Display, TEXT("Stop firing"));
+}
+	
 
 
+void AStarfallHeroController::SwitchWeapon(const FInputActionValue& Value)
+{
+	bIsSwitchWeaponInputHeld = false;	//	reset the flag
+	//	UE_LOG(LogTemp, Display, TEXT("Switching weapon"));
+
+	GetWorld()->GetTimerManager().SetTimer(HoldTimerHandle, this, &AStarfallHeroController::OnWeaponSwitchHoldDetected, HoldThreshold, false);
+}
 
 
+void AStarfallHeroController::StopSwitchWeapon()
+{
+	if (!bIsSwitchWeaponInputHeld)
+	{
+		if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
+		{
+			if (HeroPawn->Arsenal)
+			{
+				HeroPawn->Arsenal->SwitchActiveWeapon(
+					HeroPawn->Arsenal->NextSlotIndex
+				);
+			}
+			else {
+				UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
+			}
+		}
+	}
+	GetWorld()->GetTimerManager().ClearTimer(HoldTimerHandle);
+}
 
+void AStarfallHeroController::OnWeaponSwitchHoldDetected()
+{
+	bIsSwitchWeaponInputHeld = true;
 
-
+	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
+	{
+		if (HeroPawn->Arsenal)
+		{
+			HeroPawn->Arsenal->SwitchActiveWeapon(2);
+		}
+		else {
+			UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
+		}
+	}
+}
 
 
 

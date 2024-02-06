@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\sterling\Documents\Projects\Starfall\Starfall\Content\Assets\UI\StarfallUI\App.xaml
-61198877575
+31412678254
 
-8-1826580174
+5-1783571640
 198-294894759
-Launch\CharacterCreation.xaml;Launch\CharacterSelection.xaml;Launch\Launch.xaml;Launch\Loading.xaml;Launch\Window.xaml;Resources.xaml;
+HeadsUpDisplay\HUDWindow.xaml;Menu.xaml;Resources.xaml;
 
 False
 

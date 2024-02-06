@@ -53,7 +53,7 @@ namespace StarfallUI.Start {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StarfallUI;V1.0.0.0;component/launch/loading.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/StarfallUI;component/launch/loading.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Launch\Loading.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

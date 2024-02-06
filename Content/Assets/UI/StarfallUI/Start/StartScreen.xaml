@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="StarfallUI.Start.StartScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StarfallUI.Start"
+             mc:Ignorable="d" 
+             d:DesignHeight="1920" d:DesignWidth="1080">
+    <Grid Background="#FF12141D">
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="STARFALL" VerticalAlignment="Center" FontSize="80" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,382,0,0" TextWrapping="Wrap" Text="Press [ SPACE ] to continue" VerticalAlignment="Top" FontSize="10" Foreground="White"/>
+
+    </Grid>
+</UserControl>

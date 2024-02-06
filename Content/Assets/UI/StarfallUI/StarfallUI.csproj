@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Orbit\" />
+    <Compile Remove="Orbit\**" />
+    <EmbeddedResource Remove="Orbit\**" />
+    <None Remove="Orbit\**" />
+    <Page Remove="Orbit\**" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="StarfallUI.Start.CharacterSelection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StarfallUI.Start"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="659,215,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="691,306,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="691,373,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="White"/>
+
+    </Grid>
+</UserControl>

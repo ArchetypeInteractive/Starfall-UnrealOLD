@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="StarfallUI.HeadsUpDisplay.HUDWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StarfallUI.HeadsUpDisplay"
+             mc:Ignorable="d" 
+             >
+             <!--
+             d:DesignHeight="540" d:DesignWidth="960"
+             -->
+    <Grid>
+        <!-- Define Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <!-- Top bar with fixed height -->
+            <RowDefinition Height="*"/>
+            <!-- Remaining height -->
+        </Grid.RowDefinitions>
+
+        <!-- Define Columns -->
+        <Grid.ColumnDefinitions>
+            <!-- Peripheral, width defined by content or explicitly -->
+            <ColumnDefinition Width="40"/>
+            <!-- Safe zone, stretches to fill -->
+            <ColumnDefinition Width="*"/>
+            <!-- Combat column, fixed or content size -->
+            <ColumnDefinition Width="120"/>
+            <!-- Safe zone, stretches to fill -->
+            <ColumnDefinition Width="*"/>
+            <!-- Peripheral, width defined by content or explicitly -->
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Peripheral Zones -->
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Fill="#FF0048BD" Opacity="0.25"/>
+        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" Fill="#FF0048BD" Opacity="0.25"/>
+        <Rectangle Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="1" Fill="#FF0048BD" Opacity="0.25"/>
+
+        <Rectangle Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Fill="#FFC33D3D" Opacity="0.25"/>
+
+        <!-- Combat Column 
+        <Rectangle Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Fill="Red" Opacity="0.25"/>
+        -->
+
+        <!-- Safe zones are implicitly defined and do not contain elements -->
+    </Grid>
+    <!--
+    <Grid>
+        <Canvas x:Name="DEBUG_ANIM">
+            <Rectangle Width="800" Height="46" Fill="#FF0048BD" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0.25" />
+            <Rectangle Fill="#FF0048BD" Width="64" Height="404" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0.25" Canvas.Top="46" />
+            <Rectangle Fill="#FF0048BD" Width="64" Height="404" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="736" Canvas.Top="46" Opacity="0.25" />
+            <Rectangle Width="120" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="340" Fill="Red" Opacity="0.25" />
+        </Canvas>
+    </Grid>
+        <local:StartMenu x:Name="Start" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+        <local:SettingsMenu x:Name="Settings" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+        -->
+</UserControl>
