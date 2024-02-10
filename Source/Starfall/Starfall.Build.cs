@@ -15,6 +15,9 @@ public class Starfall : ModuleRules
 				"Engine",
 				"InputCore",
 				"EnhancedInput",
+				"UMG",
+				"Slate",
+				"SlateCore",
                 "Json",
 				"JsonUtilities"
             }
@@ -22,9 +25,7 @@ public class Starfall : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] 
 			{
-                "Noesis", 
-				"NoesisRuntime",
-				"NakamaUnreal",
+                "NakamaUnreal",
 				"NakamaCore",
                 "GameplayAbilities",
 				"GameplayTags",

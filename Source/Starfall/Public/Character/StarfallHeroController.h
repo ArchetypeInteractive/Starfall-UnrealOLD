@@ -30,6 +30,8 @@ class STARFALL_API AStarfallHeroController : public APlayerController
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = MenuInput, meta = (AllowPrivateAccess = "true"))
 	UInputAction* DirectorAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = MenuInput, meta = (AllowPrivateAccess = "true"))
+	UInputAction* MenuContinueAction;
 
 
 
@@ -134,6 +136,9 @@ public:
 	void SwitchWeapon(const FInputActionValue& Value);
 	void SwitchWeaponToHeavy(const FInputActionValue& Value);
 	void StopSwitchWeapon();
+
+
+	void StartMenuContinue();
 	//	void StartLiftJump(const FInputActionValue& Value);
 	//	void Landed(const FHitResult& Hit);
 

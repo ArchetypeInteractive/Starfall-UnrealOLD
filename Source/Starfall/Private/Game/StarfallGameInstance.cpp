@@ -80,6 +80,12 @@ void UStarfallGameInstance::OnRealtimeClientConnectError(const FNakamaRtError& E
 
 
 
+
+
+
+
+
+
 void UStarfallGameInstance::WriteCharacterData(const FCharacterData& CharacterData)
 {
 	FString Json;
@@ -101,7 +107,6 @@ void UStarfallGameInstance::WriteCharacterData(const FCharacterData& CharacterDa
 	NakamaClient->WriteStorageObjects(NakamaSession, StorageObjectsData, WriteStorageObjectsSuccessDelegate, WriteStorageObjectsErrorDelegate);
 }
 
-/* Delegate handlers */
 
 void UStarfallGameInstance::OnWriteStorageObjectsSuccess(const FNakamaStoreObjectAcks& StorageObjectAcks)
 {
@@ -116,10 +121,12 @@ void UStarfallGameInstance::OnWriteStorageObjectsError(const FNakamaError& Error
 
 void UStarfallGameInstance::LoadUserSettings()
 {
-	UserSettings = Cast<UStarfallGameUserSettings>(UGameUserSettings::GetGameUserSettings());
-	if (UserSettings)
-	{
-		UserSettings->LoadSettings();
-		//	return UserSettings;
-	}
+	//	UserSettings = Cast<UStarfallGameUserSettings>(UGameUserSettings::GetGameUserSettings());
+	//	if (UserSettings)
+	//	{
+	//		UserSettings->LoadSettings();
+	//		//	return UserSettings;
+	//	}
 }
+/*
+*/

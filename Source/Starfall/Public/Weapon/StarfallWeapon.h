@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "Sound/SoundBase.h"
 #include "Particles/ParticleSystem.h"
+#include "Blueprint/UserWidget.h"
 //  #include <AbilitySystemComponent.h>
 #include "StarfallWeapon.generated.h"
 
@@ -51,6 +52,21 @@ enum class EWeaponArchetype : uint8
 };
 
 
+USTRUCT(BlueprintType)
+struct FReticle
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Reticle")
+	UUserWidget* ReticleWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Reticle")
+	UTexture2D* ReticleTexture;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Reticle")
+	FLinearColor ReticleColor;
+};
+
 
 UCLASS()
 class STARFALL_API AStarfallWeapon : public AActor //, public IAbilitySystemInterface
@@ -58,16 +74,7 @@ class STARFALL_API AStarfallWeapon : public AActor //, public IAbilitySystemInte
     GENERATED_BODY()
 
 public:
-    //  Enum properties
-    //  Lorem Ipsum dolor sit amet
     AStarfallWeapon();
-
-    // IAbilitySystemInterface implementation
-    //  virtual UAbilitySystemComponent* GetWeaponAbilityComponent() const { 
-    //      return AbilitySystemComponent; 
-    //  };
-
-
 
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Properties")
@@ -86,6 +93,9 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Properties")
     bool bIsReloading;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Properties")
+    FReticle Reticle;
 
     // Common properties
     //  ----------------

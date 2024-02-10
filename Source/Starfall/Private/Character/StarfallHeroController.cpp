@@ -26,7 +26,7 @@ void AStarfallHeroController::BeginPlay()
 		if (InputSubsystem)
 		{
 			InputSubsystem->AddMappingContext(GameplayMappingContext, 0);
-			//	Subsystem->AddMappingContext(MenuMappingContext, 0);
+			InputSubsystem->AddMappingContext(MenuMappingContext, 1);
 
 			UE_LOG(LogTemp, Log, TEXT("Subsystem retrieved successfully."));
 		}
@@ -37,6 +37,10 @@ void AStarfallHeroController::BeginPlay()
 }
 
 
+
+
+
+
 void AStarfallHeroController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
@@ -44,6 +48,17 @@ void AStarfallHeroController::SetupInputComponent()
 	//	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent)) {
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(InputComponent))
 	{
+
+		EnhancedInputComponent->BindAction(MenuContinueAction, ETriggerEvent::Started, this, &AStarfallHeroController::StartMenuContinue);
+		//	EnhancedInputComponent->BindAction(MenuContinueAction, ETriggerEvent::Completed, this, &AStarfallHeroController::StopMenuContinue);
+
+
+
+
+
+
+
+
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::Move);
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AStarfallHeroController::Look);
 	
@@ -90,7 +105,10 @@ void AStarfallHeroController::SwitchContext(UInputMappingContext* InputMappingCo
 
 
 
-
+void AStarfallHeroController::StartMenuContinue()
+{
+	UE_LOG(LogTemp, Display, TEXT("Menu Continue"));
+}
 
 void AStarfallHeroController::Director()
 {
@@ -221,10 +239,10 @@ void AStarfallHeroController::FireWeapon(const FInputActionValue& Value)
 	{
 		if (HeroPawn->Arsenal)
 		{
-			if (HeroPawn->Arsenal->ActiveWeapon)
-			{
-				HeroPawn->Arsenal->ActiveWeapon->ShootWeapon();
-			}
+			//	if (HeroPawn->Arsenal->ActiveWeapon)
+			//	{
+			//		HeroPawn->Arsenal->ActiveWeapon->ShootWeapon();
+			//	}
 		}
 		else {
 			UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
@@ -237,6 +255,14 @@ void AStarfallHeroController::StopFireWeapon()
 	UE_LOG(LogTemp, Display, TEXT("Stop firing"));
 }
 	
+
+
+
+
+
+//	Our switch weapon members should not know about the logic within Arsenal Component,
+//	instead, we should just determine if we are tapping or holding the input
+//	and pass the result to arsenal component to handle the logic
 
 
 void AStarfallHeroController::SwitchWeapon(const FInputActionValue& Value)
@@ -254,15 +280,15 @@ void AStarfallHeroController::StopSwitchWeapon()
 	{
 		if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
 		{
-			if (HeroPawn->Arsenal)
-			{
-				HeroPawn->Arsenal->SwitchActiveWeapon(
-					HeroPawn->Arsenal->NextSlotIndex
-				);
-			}
-			else {
-				UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
-			}
+			//	if (HeroPawn->Arsenal)
+			//	{
+			//		HeroPawn->Arsenal->SwitchActiveWeapon(
+			//			HeroPawn->Arsenal->NextSlotIndex
+			//		);
+			//	}
+			//	else {
+			//		UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
+			//	}
 		}
 	}
 	GetWorld()->GetTimerManager().ClearTimer(HoldTimerHandle);
@@ -274,13 +300,13 @@ void AStarfallHeroController::OnWeaponSwitchHoldDetected()
 
 	if (AStarfallHeroCharacter* HeroPawn = Cast<AStarfallHeroCharacter>(GetPawn()))
 	{
-		if (HeroPawn->Arsenal)
-		{
-			HeroPawn->Arsenal->SwitchActiveWeapon(2);
-		}
-		else {
-			UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
-		}
+		//	if (HeroPawn->Arsenal)
+		//	{
+		//		HeroPawn->Arsenal->SwitchActiveWeapon(2);
+		//	}
+		//	else {
+		//		UE_LOG(LogTemp, Warning, TEXT("No arsenal component found."));
+		//	}
 	}
 }
 

@@ -12,17 +12,125 @@ UStarfallArsenalComponent::UStarfallArsenalComponent()
     //  Set the initial active slot to the primary slot
     //  ActiveSlot = PrimarySlot;
 }
-/*
-*/
+
 void UStarfallArsenalComponent::BeginPlay()
 {
     Super::BeginPlay();
 
 
-    UE_LOG(LogTemp, Display, TEXT("ArsenalComponent begin play"));
 
-    AStarfallCharacter* Owner = Cast<AStarfallCharacter>(GetOwner());
-    if (!Owner || !Owner->GetMesh()) { return; };
+
+    //  Our Arsenal Component is only relevant when 
+    //  the player character is actually spawned in world.
+    // 
+    // 
+	//  When this component is activated,
+    //  -   Read player's inventory.WeaponSlots
+    //  -   Spawn each weapon in slot[0] from the inventory
+    //      -   slot[0] = PrimarySlot, socket = "ik_hand_gun"
+    //      -   slot[1] = SpecialSlot, socket = "wa_back_gun"
+    //      -   slot[2] = HeavySlot, socket = "wa_back_gun"
+
+}
+
+
+
+
+void UStarfallArsenalComponent::SwapActiveSlot(bool bIsLongPress)
+{
+
+    if (!bIsLongPress)
+    {
+        UE_LOG(LogTemp, Display, TEXT("Toggle between 0-1 weapons"));
+    }
+    else {
+        UE_LOG(LogTemp, Display, TEXT("Switch to heavy weapon"));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //  AStarfallCharacter* Owner = Cast<AStarfallCharacter>(GetOwner());
+    //  if (!Owner || !Owner->GetMesh()) { return; };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //  ActiveSlot = PrimarySlot;
 
 
@@ -53,56 +161,55 @@ void UStarfallArsenalComponent::BeginPlay()
     //  {
     //      PrimarySlot.Weapons[0]->AttachToComponent(OwnerCharacter->GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, FName("ik_hand_gun"));
     //  }
-}
 
-
+/*
 void UStarfallArsenalComponent::SwitchActiveWeapon(int32 NewActiveSlotIndex)
 {
-    PreviousSlotIndex = ActiveSlotIndex;
-
-    // Determine the next slot index based on current and previous slots
-    int32 PotentialNextSlotIndex = NewActiveSlotIndex; // This is the initially intended next slot index
-    switch (NewActiveSlotIndex)
-    {
-    case 0:
-        PotentialNextSlotIndex = 1;
-        break;
-    case 1:
-        PotentialNextSlotIndex = 0;
-        break;
-    case 2:
-        if (PreviousSlotIndex == 0) {
-            PotentialNextSlotIndex = 1;
-        }
-        else if (PreviousSlotIndex == 1) {
-            PotentialNextSlotIndex = 0;
-        }
-        break;
-    }
-
-    // Check if the intended next slot has weapons. If not, keep the current active slot.
-    if (WeaponSlots.IsValidIndex(PotentialNextSlotIndex) && !WeaponSlots[PotentialNextSlotIndex].Weapons.IsEmpty())
-    {
-        // Valid slot with weapons found, proceed to switch
-        ActiveSlotIndex = PotentialNextSlotIndex;
-        AStarfallWeapon* NewActiveWeapon = WeaponSlots[ActiveSlotIndex].Weapons[0];
-        if (NewActiveWeapon)
-        {
-            // If there's a valid weapon in the slot, broadcast the switch and update the active weapon
-            OnSwitchWeapon.Broadcast(NewActiveWeapon);
-        }
-    }
-    else
-    {
-        // No valid weapons in the next slot, optionally handle this case (e.g., log, error, or default action)
-        UE_LOG(LogTemp, Warning, TEXT("No weapons in the next slot %d, skipping switch."), PotentialNextSlotIndex);
-    }
-
-    UE_LOG(LogTemp, Display, TEXT("Previous Slot Index: %d, New Active Slot Index: %d"), PreviousSlotIndex, ActiveSlotIndex);
-
-
-
-    SpawnWeapon();
+    //  PreviousSlotIndex = ActiveSlotIndex;
+    //  
+    //  // Determine the next slot index based on current and previous slots
+    //  int32 PotentialNextSlotIndex = NewActiveSlotIndex; // This is the initially intended next slot index
+    //  switch (NewActiveSlotIndex)
+    //  {
+    //  case 0:
+    //      PotentialNextSlotIndex = 1;
+    //      break;
+    //  case 1:
+    //      PotentialNextSlotIndex = 0;
+    //      break;
+    //  case 2:
+    //      if (PreviousSlotIndex == 0) {
+    //          PotentialNextSlotIndex = 1;
+    //      }
+    //      else if (PreviousSlotIndex == 1) {
+    //          PotentialNextSlotIndex = 0;
+    //      }
+    //      break;
+    //  }
+    //  
+    //  // Check if the intended next slot has weapons. If not, keep the current active slot.
+    //  if (WeaponSlots.IsValidIndex(PotentialNextSlotIndex) && !WeaponSlots[PotentialNextSlotIndex].Weapons.IsEmpty())
+    //  {
+    //      // Valid slot with weapons found, proceed to switch
+    //      ActiveSlotIndex = PotentialNextSlotIndex;
+    //      AStarfallWeapon* NewActiveWeapon = WeaponSlots[ActiveSlotIndex].Weapons[0];
+    //      if (NewActiveWeapon)
+    //      {
+    //          // If there's a valid weapon in the slot, broadcast the switch and update the active weapon
+    //          OnSwitchWeapon.Broadcast(NewActiveWeapon);
+    //      }
+    //  }
+    //  else
+    //  {
+    //      // No valid weapons in the next slot, optionally handle this case (e.g., log, error, or default action)
+    //      UE_LOG(LogTemp, Warning, TEXT("No weapons in the next slot %d, skipping switch."), PotentialNextSlotIndex);
+    //  }
+    //  
+    //  UE_LOG(LogTemp, Display, TEXT("Previous Slot Index: %d, New Active Slot Index: %d"), PreviousSlotIndex, ActiveSlotIndex);
+    //  
+    //  
+    //  
+    //  SpawnWeapon();
 
 }
 
@@ -138,6 +245,7 @@ void UStarfallArsenalComponent::SpawnWeapon()
     }
 }
 
+*/
 
 
 
